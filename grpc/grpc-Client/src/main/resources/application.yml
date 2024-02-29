@@ -1,0 +1,9 @@
+grpc:
+  client:
+    grpc-service:
+      address: static://localhost:8181
+      negotiationType: plaintext
+    logging:
+      level:
+        io.grpc: DEBUG
+
