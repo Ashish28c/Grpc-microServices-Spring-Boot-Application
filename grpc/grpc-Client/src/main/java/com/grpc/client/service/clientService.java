@@ -59,12 +59,10 @@ public class clientService {
 	            public void onNext(Book book) {
 	                response.add(book.getAllFields());
 	            }
-
 	            @Override
 	            public void onError(Throwable throwable) {
 	                countDownLatch.countDown();
 	            }
-
 	            @Override
 	            public void onCompleted() {
 	                countDownLatch.countDown();
